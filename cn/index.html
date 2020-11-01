@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+    <title>TStar</title>
+    <link rel="shortcut icon" type="image/png" href="../images/trx.svg" sizes="16x16">
+    <link rel="shortcut icon" type="image/png" href="../images/trx.svg" sizes="32x32">
+    <link rel="shortcut icon" type="image/png" href="../images/trx.svg" sizes="64x64">
+    <link rel="shortcut icon" type="image/png" href="../images/trx.svg" sizes="96x96">
+    <link rel="shortcut icon" type="image/png" href="../images/trx.svg" sizes="180x180">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/trx.svg">
+    <link rel="android-touch-icon" sizes="180x180" href="../images/trx.svg">
+    <link href="../css/all.css" rel="stylesheet" type="text/css" />
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/animation.css" rel="stylesheet">
+    <link href="../css/adaptive.css" rel="stylesheet">
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/TronWeb.js"></script>
+</head>
+<body>
+    <div id="filter"></div>
+    <div class="langblock">
+        <a id="enurl" href="/index.html" class="langwrap langwrap_en"><img src="../images/eng2.svg" alt=""></a>
+        <a id="cnurl" href="/cn/index.html" class="langwrap langwrap_zh"><img src="../images/chi2.svg?v=2" alt=""></a>
+    </div>
+    <div class="wrapper">
+        <div class="cbp-af-header">
+            <div class="cbp-af-inner">
+                <nav>
+                    <a href="#about" class="scrollto">关于我们</a>
+                    <a href="#investments" class="scrollto">投资额</a>
+                    <a href="javascript:void(0)" data-remodal-target="invest">缴纳保证金</a>
+                    <a href="javascript:void(0)" data-remodal-target="wallet" id="goToWallet">钱包的统计</a>
+                </nav>
+            </div>
+        </div>
+        <div class="content">
+            <div class="mainback">
+                <div class="wrap">
+                    <div class="mainscreen">
+                        <div class="mainbackwrap">
+                            <div data-offset="30" class="mainphone parallax"></div>
+                            <div class="dash1"></div>
+                            <div class="dash2"></div>
+                            <div class="dash3"></div>
+                            <div class="dash4"></div>
+                        </div>
+                        <div class="mainbackwrap">
+                            <div class="mainbackdesc" data-scroll="toggle(.fromRightIn, .fromRightOut)">
+                                <span id="projectName" style="color:var(--mainColor);font-size:50px;font-weight:bold;">
+                                    - </span>
+                                <h1 style="margin-top:40px;">可靠的投资，收到 <span id="maxReward"> - </span> 截止您的存款</h1>
+                                <div class="maindesc">
+                                    <div class="maindesctext" style="line-height:24px;">
+                                        <span><i class="far fa-check-circle"></i> 去中心化的区块链和匿名的平台</span>
+                                        <span><i class="far fa-check-circle"></i> 完全安全的收入基于TRON智能合约</span>
+                                        <span><i class="far fa-check-circle"></i> 智能合约由独立公司验证了和审计了</span>
+                                        <a href="javascript:void(0)" data-remodal-target="invest"
+                                            class="maindescbut">现在投资!</a>
+                                        <div class="maindesclink">
+                                            <a href="https://tronscan.io/#/contract/TAU1zmgPLjBhezkTQnp1rMpEtbgmtoL8Fp/code"
+                                                class="maindesclink" target="_blank"><i
+                                                    class="fas fa-print-search"></i>检查智能合约</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="mainabout" id="about">
+                <div class="wrap">
+                    <h2 data-scroll="toggle(.fromTopIn, .fromTopOut)" style="line-height: 60px;">我们会 <span
+                            class="gt">翻倍</span> 您的资金</h2>
+                    <div class="mainaboutitemsblock">
+                        <div class="aboutdashtop"></div>
+                        <div class="aboutdashbottom"></div>
+                        <div class="aboutdashleft"></div>
+                        <div class="aboutdashright"></div>
+                        <div class="mainaboutitem aboutitemgrad1" data-scroll="toggle(.fromLeftIn, .fromLeftOut)"
+                            style="line-height: 24px;">
+                            <h3 style="line-height: 30px;">无限收益与始终不断增长的工资</h3>
+                            我们提供增长百分比的投资条件。他们由基准利率，智能合约的总奖金和个人“保持奖金“。最高利润：<br><br><b id="maxReward1"> - </b>
+                        </div>
+                        <div class="mainaboutitem aboutitemgrad2" data-scroll="toggle(.fromRightIn, .fromRightOut)"
+                            style="line-height: 24px;">
+                            <h3 style="line-height: 30px;">有专业团队的全球法律公司</h3>
+                            我们是正式注册的公司。我们有区块链市场上值得信赖的专业团队。我们24/7工作，以增加平台的名声，并且尊贤.<br><b>加入我们并得到您的利润!</b>
+                        </div>
+                        <div class="mainaboutitem2 aboutitemgrad" style="line-height: 24px;">
+                            <img src="../images/ico1.png">
+                            <h3 style="line-height: 30px;">TRX-智能合约的可靠性. <br>诈骗是不可能的。</h3>
+                            智能合约的技术确保所有参与者资金的完全安全。没有人能窃取资金或者改变合同智能.
+                        </div>
+                    </div>
+                    <div class="totalsumblock">
+                        <div class="totalsumwrap" data-scroll="toggle(.fromLeftIn, .fromLeftOut)">
+                            <div class="totalsumwrapvalue">
+                                <div class="totalsumdesc">
+                                    总投资金额 (TRX):
+                                </div>
+                                <div class="totalsumnum totalInvested" id="totalInvest"> - </div>
+                            </div>
+                            <div class="totalsumwrapvalue">
+                                <div class="totalsumdesc">
+                                    活动参与者的总数:
+                                </div>
+                                <div class="totalsumnum1 totalsumnum totalUsers" id="totalUsers"> - </div>
+                            </div>
+                        </div>
+                        <div class="totalsumwrap" data-scroll="toggle(.fromRightIn, .fromRightOut)"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="workblock" id="investments">
+                <div class="wrap">
+                    <div class="dashtop"></div>
+                    <h2 style="margin:0;line-height: 60px;" data-scroll="toggle(.fromTopIn, .fromTopOut)">投资条件
+                        <small><span class="gt">最好的</span> 市场供需</small>
+                    </h2>
+                    <div class="macbackblock">
+                        <div class="macblock">
+                            <div class="macback"></div>
+                            <div class="macblockline" data-scroll="toggle(.fromLeftIn, .fromLeftOut)">工作与<b> TRON </b>网络
+                                <a href="javascript:void(0)" class="blocklinea question" data-remodal-target="tron"><i
+                                        class=" fas fa-question-circle"></i></a>
+                            </div>
+                            <div class="macblockline" data-scroll="toggle(.fromLeftIn, .fromLeftOut)">
+                                最低存款: <b id="minAmount"> - </b> TRX
+                            </div>
+                            <div class="macblockline" data-scroll="toggle(.fromLeftIn, .fromLeftOut)">
+                                总收入: <b id="maxReward2"> - </b> (存款包括)
+                            </div>
+                            <div class="macblockline" data-scroll="toggle(.fromLeftIn, .fromLeftOut)">
+                                盈利<b>每一刻</b>,随时提款 </div>
+                        </div>
+                        <div class="workdescblock">
+                            <div class="workdesc" data-scroll="toggle(.fromRightIn, .fromRightOut)">
+                                <div class="workdescpre">
+                                    <i class="fas fa-layer-plus"></i> 固定利率:
+                                </div>
+                                <div class="workdesctitle"><b id="baseRate"> - </b></div> 每天基础利率固定不变.
+                            </div>
+                            <div class="workdesc" data-scroll="toggle(.fromRightIn, .fromRightOut)"
+                                style="line-height: 26px;">
+                                <div class="workdescpre">
+                                    <i class="fas fa-layer-plus"></i> 保持奖金:
+                                </div>
+                                <div class="workdesctitle"><b id="daySetup"> - </b>每24小时无退款</div>
+                                智能合约从您的存款或最后取款日期计算保留奖金。如果您没有要求付款，它将向您收取额外的奖金。24小时后<b id="daySetup1"> - </b>.
+                            </div>
+                            <div class="workdesc" data-scroll="toggle(.fromRightIn, .fromRightOut)">
+                                <div class="workdescpre">
+                                    <i class="fas fa-layer-plus"></i> 推荐奖金:
+                                </div>
+                                <div class="workdesctitle">+邀请，节点奖励</div>
+                                <b id="maxInv"> - </b > 级邀请 <b id="invRate"> - </b> ,  <b id="nodeMax"> - </b> 级节点 <b>(PLn-PL(n-1))*1%</b>
+                            </div>
+                            <div class="workdesc" data-scroll="toggle(.fromRightIn, .fromRightOut)">
+                                <div class="workdescpre">
+                                    <i class="fas fa-layer-plus"></i> 其他奖金:
+                                </div>
+                                <div class="workdesctitle">+平台赠送Token</div>投资奖励金额每 
+                                <b>1000</b> TRX奖励 <b>1</b> TStar
+                            </div>
+                            <div class="totalsumdesc" data-scroll="toggle(.fromRightIn, .fromRightOut)">
+                                当前平台余额(TRX):
+                            </div>
+                            <div class="totalsumnum1 totalsumnum trxbalance contractBalance"
+                                data-scroll="toggle(.fromRightIn, .fromRightOut)" id="balance"> - </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="stepsmainblock" id="steps">
+                <div class="wrap">
+                    <div class="dashtop"></div>
+                    <h2>使用平台的办法<small>简单 <span class="gt">3步骤</span> 获取收益</small></h2>
+                    <div class="stepsline">
+                        <div class="bigstepline"></div>
+                        <div class="bigsteplinecic1"></div>
+                        <div class="stepslinewrap">
+                            <h3>步骤#1:缴纳保证金</h3>
+                            <div class="stepsblock" data-scroll="toggle(.fromLeftIn, .fromLeftOut)">
+                                <h4>收到TRX</h4>
+                                我们建议使用: <b>TronLink</b> / <b>TronMask</b> 浏览器扩展或者 <a href="https://tronwallet.me/"
+                                    target="_blank">TronWallet</a> / <a href="https://bankowallet.com/"
+                                    target="_blank">Banko</a> 手机应用.<br>
+                                You can get TRX coins via popular exchangers.
+                                <a href="javascript:void(0)" data-remodal-target="tron" class="maindescbut"
+                                    style="text-shadow:0px 0px 0px #333;font-weight: bold;font-size: 16px;">获取TRX的办法</a>
+                            </div>
+                            <div class="stepsblock" data-scroll="toggle(.fromLeftIn, .fromLeftOut)">
+                                <h4>Send TRX到我们的智能合约</h4>
+                                发送任何数量的TRX在智能合约地址上,并开始每时获得收益。最低存款金额为<b id="minAmount1"> - </b>TRX。没有最大金额.
+                                <a href="javascript:void(0)" data-remodal-target="invest" class="maindescbut"
+                                    style="text-shadow:0px 0px 0px #333;font-weight: bold;font-size: 16px;">缴纳保证金</a>
+                            </div>
+                        </div>
+                        <div class="stepslinewrap" data-scroll="toggle(.fromRightIn, .fromRightOut)">
+
+                        </div>
+                    </div>
+                    <div class="stepsline">
+                        <div class="bigsteplinecic1"></div>
+                        <div class="stepslinewrap" data-scroll="toggle(.fromRightIn, .fromRightOut)">
+                            <form class="maincontform">
+                                <label>您的TRX钱包的地址:</label>
+                                <input type="text" class="trxWallet authTrue" value="Wallet address" id="walletaddr"
+                                    style="display:none" readonly>
+                                <input type="text" class="trxWallet authFalse"
+                                    placeholder="Connect with your wallet app..." readonly>
+                                <a href="javascript:void(0)" data-remodal-target="wallet"
+                                    class="maindescbut">您钱包的统计信息</a>
+                            </form>
+                        </div>
+                        <div class="stepslinewrap stepslinewrapright" data-scroll="toggle(.fromLeftIn, .fromLeftOut)">
+                            <h3>步骤#2:获取收益</h3>
+                            <div class="stepsblock stepsblockfull">
+                                <h4>收到您的TRX每一刻</h4>
+                                您可以查看您的所有钱包信息,包括您的存款，收入，取款和推荐统计信息.
+                                副生所得与推荐计划:<br>
+                                <b id="maxInv1"> - </b> 级的伙伴酬金:<b id="invRate1"> - </b><br>
+                                <b id="nodeMax1"> - </b> 级节点酬金<b>(PLn-PL(n-1))*1%</b><br>
+                                奖励即时在您的钱包余额中出现，并且可以随时随地提取收益.
+                                <a href="javascript:void(0)" data-remodal-target="wallet" class="maindescbut"
+                                    style="text-shadow:0px 0px 0px #333;font-weight: bold;font-size: 16px;">您钱包的统计信息</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stepsline">
+                        <div class="bigsteplinecic1"></div>
+                        <div class="stepslinewrap" data-scroll="toggle(.fromLeftIn, .fromLeftOut)">
+                            <h3>步骤#3:请求撤销</h3>
+                            <div class="stepsblock stepsblockfull2" style="line-height:12px">
+                                <h4 style="line-height:40px">请求信息TRX提款</h4>
+                                <i class="far fa-check-circle"></i> 您的支出将到来<b>立即</b><br><br>
+                                <i class="far fa-check-circle"></i> 请求从您存入的<b>同一个钱包</b>提款<br><br>
+                                <i class="far fa-check-circle"></i> 您所有的钱包存款和推荐节点收入将被提取，每1个请求单次交易
+                            </div>
+                        </div>
+                        <div class="stepslinewrap" data-scroll="toggle(.fromRightIn, .fromRightOut)">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="reviewblock">
+                <div class="wrap">
+                    <div class="dashtop"></div>
+                    <h2 data-scroll="toggle(.fromTopIn, .fromTopOut)">TStar代币模型</h2>
+                    <div class="reviewwrap">
+                        <div class="stepsblock stepsblockfull2" style="line-height:12px;border-top:0px">
+                            <h4 style="line-height:40px">TStar是生态治理代币，代币无私募，无预挖，所有释放来自于挖矿奖励</h4>
+                            <i class="far fa-check-circle"></i> 代币总量 <b>10000000</b><br><br>
+                            <i class="far fa-check-circle"></i> 初始流动性 <b>500000</b><br><br>
+                            <i class="far fa-check-circle"></i> 转账有燃烧属性，转账金额的2.5%用于奖池，2.5%直接燃烧<br><br>
+                            <i class="far fa-check-circle"></i> 投资款的2%用于回购TStar进行燃烧
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="reviewblock">
+                <div class="wrap">
+                    <div class="dashtop"></div>
+                    <h2 data-scroll="toggle(.fromTopIn, .fromTopOut)">正当和透明的智能对比 <span class="gt">独立的</span>
+                        听音和评论</small></h2>
+                    <div class="reviewwrap">
+                        <div class="review">
+                            <div class="mainreview">
+                                <div class="mainreviewdesc">
+                                    <span id="pname"> - </span>平台智能合约在TRON区块链上发表.没有人可以改变规则或算法，甚至管理。这提供我们的参与者在他们的资金安全无条件的信心.任何人都可以检查智能合约代码，并吃准平台是诚实的.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <div class="mainreviewdesc">
+                                智能合约的代码:
+                            </div>
+                            <textarea class="smartcode">
+                                pragma solidity 0.5.12;
+
+library SafeMath {
+    
+    function add(uint256 a, uint256 b) internal pure returns (uint256) {
+        uint256 c = a + b;
+        require(c >= a, "SafeMath: addition overflow");
+        return c;
+    }
+
+    function sub(uint256 a, uint256 b) internal pure returns (uint256) {
+        return sub(a, b, "SafeMath: subtraction overflow");
+    }
+
+    function sub(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
+        require(b <= a, errorMessage);
+        uint256 c = a - b;
+        return c;
+    }
+
+    function mul(uint256 a, uint256 b) internal pure returns (uint256) {
+        if (a == 0) {
+            return 0;
+        }
+        uint256 c = a * b;
+        require(c / a == b, "SafeMath: multiplication overflow");
+        return c;
+    }
+
+    function div(uint256 a, uint256 b) internal pure returns (uint256) {
+        return div(a, b, "SafeMath: division by zero");
+    }
+    
+    function div(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
+        require(b > 0, errorMessage);
+        uint256 c = a / b;
+        return c;
+    }
+
+    function mod(uint256 a, uint256 b) internal pure returns (uint256) {
+        return mod(a, b, "SafeMath: modulo by zero");
+    }
+
+    function mod(uint256 a, uint256 b, string memory errorMessage) internal pure returns (uint256) {
+        require(b != 0, errorMessage);
+        return a % b;
+    }
+}
+
+interface IERC20 {
+  
+    function totalSupply() external view returns (uint256);
+
+    function balanceOf(address account) external view returns (uint256);
+
+    function transfer(address recipient, uint256 amount) external returns (bool);
+
+    function allowance(address owner, address spender) external view returns (uint256);
+
+    function approve(address spender, uint256 amount) external returns (bool);
+
+    function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
+
+    event Transfer(address indexed from, address indexed to, uint256 value);
+
+    event Approval(address indexed owner, address indexed spender, uint256 value);
+    
+}
+
+contract ERC20Detailed is IERC20 {
+    
+    string private _name;
+    
+    string private _symbol;
+    
+    uint8 private _decimals;
+
+    constructor (string memory name, string memory symbol, uint8 decimals) public {
+        _name = name;
+        _symbol = symbol;
+        _decimals = decimals;
+    }
+
+    function name() public view returns (string memory) {
+        return _name;
+    }
+
+    function symbol() public view returns (string memory) {
+        return _symbol;
+    }
+
+    function decimals() public view returns (uint8) {
+        return _decimals;
+    }
+}
+
+contract Governance {
+
+    address public governance;
+
+    constructor() public {
+        governance = tx.origin;
+    }
+
+    event GovernanceTransferred(address indexed previousOwner, address indexed newOwner);
+
+    modifier onlyGovernance {
+        require(msg.sender == governance, "not governance");
+        _;
+    }
+
+    function setGovernance(address _governance)  public  onlyGovernance
+    {
+        require(_governance != address(0), "new governance the zero address");
+        emit GovernanceTransferred(governance, _governance);
+        governance = _governance;
+    }
+
+}
+
+contract TStarToken is Governance, ERC20Detailed {
+
+    using SafeMath for uint256;
+    event eveSetRate(uint256 burn_rate, uint256 reward_rate);
+    event eveRewardPool(address rewardPool);
+    event Transfer(address indexed from, address indexed to, uint256 value);
+    event Mint(address indexed from, address indexed to, uint256 value);
+    event Approval(address indexed owner, address indexed spender, uint256 value);
+    mapping (address => bool) public _minters;
+    uint256 internal _totalSupply;
+    mapping(address => uint256) public _balances;
+    mapping (address => mapping (address => uint256)) public _allowances;
+    uint256 public  _maxSupply = 0;
+    bool public _openTransfer = true;
+    uint256 public constant _maxGovernValueRate = 2000;
+    uint256 public constant _minGovernValueRate = 0;
+    uint256 public constant _rateBase = 10000; 
+    uint256 public  _burnRate = 250;       
+    uint256 public  _rewardRate = 250;   
+    uint256 public _totalBurnToken = 0;
+    uint256 public _totalRewardToken = 0;
+    address public _rewardPool = 0x6666666666666666666666666666666666666666;
+    address public _burnPool = 0x6666666666666666666666666666666666666666;
+    constructor () public ERC20Detailed("tstar.cc", "TStar", 18) {
+        _maxSupply = 10000000 * (10**18);
+    }
+
+    function approve(address spender, uint256 amount) external 
+    returns (bool) 
+    {
+        require(msg.sender != address(0), "ERC20: approve from the zero address");
+        require(spender != address(0), "ERC20: approve to the zero address");
+        _allowances[msg.sender][spender] = amount;
+        emit Approval(msg.sender, spender, amount);
+        return true;
+    }
+
+    function allowance(address owner, address spender) external view 
+    returns (uint256) 
+    {
+        return _allowances[owner][spender];
+    }
+
+    function balanceOf(address owner) external  view 
+    returns (uint256) 
+    {
+        return _balances[owner];
+    }
+
+    function totalSupply() external view 
+    returns (uint256) 
+    {
+        return _totalSupply;
+    }
+
+    function mint(address account, uint256 amount) external 
+    {
+        require(account != address(0), "ERC20: mint to the zero address");
+        require(_minters[msg.sender], "!minter");
+        uint256 curMintSupply = _totalSupply.add(_totalBurnToken);
+        uint256 newMintSupply = curMintSupply.add(amount);
+        require( newMintSupply <= _maxSupply,"supply is max!");
+        _totalSupply = _totalSupply.add(amount);
+        _balances[account] = _balances[account].add(amount);
+        emit Mint(address(0), account, amount);
+        emit Transfer(address(0), account, amount);
+    }
+
+    function addMinter(address _minter) public onlyGovernance 
+    {
+        _minters[_minter] = true;
+    }
+    
+    function removeMinter(address _minter) public onlyGovernance 
+    {
+        _minters[_minter] = false;
+    }
+
+    function() external payable {
+        revert();
+    }
+
+    function setRate(uint256 burn_rate, uint256 reward_rate) public 
+        onlyGovernance 
+    {
+        require(_maxGovernValueRate >= burn_rate && burn_rate >= _minGovernValueRate,"invalid burn rate");
+        require(_maxGovernValueRate >= reward_rate && reward_rate >= _minGovernValueRate,"invalid reward rate");
+        _burnRate = burn_rate;
+        _rewardRate = reward_rate;
+        emit eveSetRate(burn_rate, reward_rate);
+    }
+
+    function setRewardPool(address rewardPool) public 
+        onlyGovernance 
+    {
+        require(rewardPool != address(0x0));
+        _rewardPool = rewardPool;
+        emit eveRewardPool(_rewardPool);
+    }
+
+   function transfer(address to, uint256 value) external 
+   returns (bool)  
+   {
+        return _transfer(msg.sender,to,value);
+    }
+
+    function transferFrom(address from, address to, uint256 value) external 
+    returns (bool) 
+    {
+        uint256 allow = _allowances[from][msg.sender];
+        _allowances[from][msg.sender] = allow.sub(value);
+        return _transfer(from,to,value);
+    }
+
+    function _transfer(address from, address to, uint256 value) internal 
+    returns (bool) 
+    {
+        require(_openTransfer || from == governance, "transfer closed");
+        require(from != address(0), "ERC20: transfer from the zero address");
+        require(to != address(0), "ERC20: transfer to the zero address");
+        uint256 sendAmount = value;
+        uint256 burnFee = (value.mul(_burnRate)).div(_rateBase);
+        if (burnFee > 0) {
+            _balances[_burnPool] = _balances[_burnPool].add(burnFee);
+            _totalSupply = _totalSupply.sub(burnFee);
+            sendAmount = sendAmount.sub(burnFee);
+            _totalBurnToken = _totalBurnToken.add(burnFee);
+            emit Transfer(from, _burnPool, burnFee);
+        }
+        uint256 rewardFee = (value.mul(_rewardRate)).div(_rateBase);
+        if (rewardFee > 0) {
+            _balances[_rewardPool] = _balances[_rewardPool].add(rewardFee);
+            sendAmount = sendAmount.sub(rewardFee);
+            _totalRewardToken = _totalRewardToken.add(rewardFee);
+            emit Transfer(from, _rewardPool, rewardFee);
+        }
+        _balances[from] = _balances[from].sub(value);
+        _balances[to] = _balances[to].add(sendAmount);
+        emit Transfer(from, to, sendAmount);
+        return true;
+    }
+}
+                            </textarea>
+                        </div>
+                    </div>
+                    <div class="reviewwrap">
+                        <div class="review">
+                            <div class="totalsumdesc"><i class="fal fa-comment-alt-edit"></i> 评论和提及:</div>
+                            <div class="reviewlinkwrap">
+                                <a href="javascript:void(0)" class="reviewlink"
+                                    data-scroll="toggle(.fromTopIn, .fromTopOut)"><img src="../images/dappradar.svg"
+                                        alt=""></a>
+                                <a href="javascript:void(0)" class="reviewlink"
+                                    data-scroll="toggle(.fromTopIn, .fromTopOut)"><img src="../images/dappstats.svg"
+                                        alt=""></a>
+                                <a href="javascript:void(0)" class="reviewlink"
+                                    data-scroll="toggle(.fromTopIn, .fromTopOut)"><img src="../images/dapponline.svg?v=1"
+                                        alt=""></a>
+                                <a href="javascript:void(0)" class="reviewlink dappcom"
+                                    data-scroll="toggle(.fromTopIn, .fromTopOut)"><img src="../images/dappcom.png"
+                                        alt=""></a>
+                                <a href="javascript:void(0)" class="reviewlink state"
+                                    data-scroll="toggle(.fromTopIn, .fromTopOut)"><img src="../images/stateofthedapps.png"
+                                        alt=""></a>
+                                <a href="javascript:void(0)" class="reviewlink"
+                                    data-scroll="toggle(.fromTopIn, .fromTopOut)"><img src="../images/dappworld.png"
+                                        alt=""></a>
+                                <a href="javascript:void(0)" class="reviewlink"
+                                    data-scroll="toggle(.fromTopIn, .fromTopOut)"><img src="../images/dappreview.svg"
+                                        alt=""></a>
+                                <a href="javascript:void(0)" class="reviewlink"
+                                    data-scroll="toggle(.fromTopIn, .fromTopOut)"><img src="../images/onlinebitz.png"
+                                        alt=""></a>
+                                <a href="javascript:void(0)" class="reviewlink hyiphunter"
+                                    data-scroll="toggle(.fromTopIn, .fromTopOut)"><img src="../images/hyiphunter.png?v=1"
+                                        alt=""></a>
+                                <a href="javascript:void(0)" class="reviewlink"
+                                    data-scroll="toggle(.fromTopIn, .fromTopOut)"><img src="../images/vinveste.png"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <div class="totalsumdesc"><i class="fal fa-search-dollar"></i> 最后存款:</div>
+                            <div class="lastdepowrap">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="contactsblock" id="contacts">
+                <div class="wrap">
+                    <div class="dashtop"></div>
+                    <h2 data-scroll="toggle(.fromTopIn, .fromTopOut)">和我们联系<small>我们的支援服务 <span class="gt">24/7</span>
+                            可能的</small></h2>
+                    <div class="contwrap">
+                        <div class="contlink" data-scroll="toggle(.fromLeftIn, .fromLeftOut)">
+                            <h3>社区一:</h3>
+                            <a id="telegram" href="#" target="_blank" class="maincontbut supportlink"
+                                target="_blank">Telegram</a>
+                        </div>
+                        <div class="contlink">
+                            <h3>社区二:</h3>
+                            <a id="discord" href="#" target="_blank" class="maincontbut supportlink"
+                                target="_blank">Discord</a>
+                        </div>
+                        <div class="contlink" data-scroll="toggle(.fromRightIn, .fromRightOut)">
+                            <h3>社区三:</h3>
+                            <a id="twitter" href="#" target="_blank" class="maincontbut supportlink">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="remodal" data-remodal-id="invest">
+        <a data-remodal-action="close" class="remodal-close"></a>
+        <h1>交纳新保证金</h1>
+        <div class="modaldesc">
+            <form class="maincontform authFalse">
+                <input type="text" placeholder="Connect with your wallet app..." readonly>
+                <div class="modalref" style="line-height: 28px;">
+                    与您的连接 <b class="gt">TronLink</b> / <b class="gt">TronPay</b> 浏览器插件,或者 <b class="gt">TronWallet</b> /
+                    <b class="gt">Banko</b> 手机应用. 连接后，您有机会进行存款（重新加载此页面).<br><u>如果您不能连接,请联系我们的支持团队.</u><br><br>
+                    <div class="userRefererDiv">
+                        <i class="fal fa-user-friends"></i> 您的上线合作伙伴钱包:
+                        <span class="userReferer" id="userReferer">No upline</span>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modaldesc">
+            <div class="dashmodal"></div>
+            <form class="maincontform">
+                <input type="text" class="trxAmount1" placeholder="enter amount" value="100" id="inputAmount">
+                <a href="javascript:void(0)" class="maindescbut investButton1">充值</a>
+            </form>
+            <div class="modalline"><b class="gt"><i class="fas fa-exclamation-triangle"></i> 重要!</b> 不要忘记区块链费用！
+                您的钱包中应该还有5-10 TRX，否则交易将失去能量状态!</div><br>
+            <div class="modalline"><i class="fas fa-check-circle"></i> &nbsp;最低的存款金额: <b id="minAmount2"> - </b>TRX
+                (没有最大的限制)</div>
+            <div class="modalline"><i class="fas fa-check-circle"></i> &nbsp;我们只使用TRON (TRX) 加密货币</div>
+            <div class="modalline"><i class="fas fa-check-circle"></i> &nbsp;您的存款将确认后<b>激活</b>在区块链中</div>
+            <div class="modalline"><i class="fas fa-check-circle"></i> &nbsp;收益每一刻来自你的钱包余额,您可以随时取款 </div>
+        </div>
+    </div>
+    <div class="remodal" data-remodal-id="wallet">
+        <a data-remodal-action="close" class="remodal-close"></a>
+        <h1>钱包的统计信息</h1>
+        <form class="maincontform authFalse">
+            <input type="text" placeholder="Connect with your wallet app..." readonly>
+            <div class="modalref">
+                与您的连接 <b class="gt">TronLink</b> / <b class="gt">TronPay</b> 浏览器插件,或者 <b class="gt">TronWallet</b> / <b
+                    class="gt">Banko</b> 手机应用. 连接后，您有机会进行存款（重新加载此页面).<br><u>如果您不能连接,请联系我们的支持团队.</u>
+            </div>
+        </form>
+        <div class="modaldesc authTrue" style="display:none">
+            <div class="modaldesc">
+                <form class="maincontform">
+                    <label>您的钱包的地址:</label>
+                    <input type="text" class="trxWallet" readonly id="myaddr">
+                    <div class="modalref" style="line-height: 24px;">
+                        <i class="fal fa-link"></i> 您的联署连接:
+                        <span class="reflink" id="rlink">...</span>
+                        <small>- 与您的合作伙伴分享此链接,以获得推荐奖励</small><br>
+                        <small>- 您应该有足够的存款来解锁会员奖金！ 没有有效存款，您将不会获得任何奖励.</small>
+                    </div>
+                </form>
+            </div>
+            <div class="modaldesc">
+                <div class="dashmodal"></div>
+                <div class="macblockline">
+                    <div class="modallineflex">
+                        <div class="modallinewrap">
+                            您当前的每日利润:
+                            <div class="modallinewrapvalue userPercentRate" id="dayTotalRate"> - </div>
+                        </div>
+                        <div class="modallinewrap" style="line-height: 24px;">
+                            基础收益: <b class="basicPercentRate" id="baseRate1"> - </b><br>
+                            持有收益: <b class="holdPercentRate" id="holdRate"> - </b><br>
+                            代币收益: <b class="contractBalanceRate" id="tokenRate"> - </b>
+                        </div>
+                    </div>
+                </div>
+                <div class="macblockline">
+                    <div class="modallineflex">
+                        <div class="modallinewrap">
+                            可提取总额:
+                            <div class="modallinewrapvalue"><img src="../images/trx.svg" alt=""  style="vertical-align:middle"> <span style="font-size: 14px;">TRX</span> <span
+                                    class="userAvailable" id="userAvailable"> - </span></div>
+                            <div class="modallinewrapvalue"><img src="../images/tstar.svg" alt="" style="vertical-align:middle"> <span style="font-size: 14px;">TStar</span> <span
+                                    class="userAvailable" id="brxAvailable"> - </span></div>
+                        </div>
+                        <div class="modallinewrap">
+                            <a href="javascript:void(0)" class="maindescbut withdrawButton"
+                                style="text-shadow:0px 0px 0px #333;font-weight: bold;font-size: 16px;">提取</a>
+                        </div>
+                        <div class="modallinenotify">可提取总额=投资奖励+邀请奖励+节点奖励, TStar奖励=投资奖励/1000，投资奖励最高投资总额的200%，邀请和节点可提现最大额为投资总额</div>
+                    </div>
+                </div>
+            </div>
+            <div class="modaldesc">
+                <div class="dashmodal"></div>
+                <div class="macblockline">
+                    <div class="modallineflex">
+                        <div class="modallinewrap">
+                            投资总额:
+                            <div class="modallinewrapvalue"><img src="../images/trx.svg" alt=""> <span
+                                    class="userTotalDeposits" id="userAmountOfDeposits"> - </span></div>
+                        </div>
+                        <div class="modallinewrap">
+                            投资次数: <b><span class="userAmountOfDeposits" id="userTotalDeposits"> - </span></b><br>
+                            最后投资节日:<br><b><i class="far fa-clock"></i> <span class="userLastDepositTime" id="userLastDepositTime"> -
+                                </span></b>
+                        </div>
+                    </div>
+                </div>
+                <div class="macblockline">
+                    <div class="modallineflex">
+                        <div class="modallinewrap">
+                            投资总奖励:
+                            <div class="modallinewrapvalue"><img src="../images/trx.svg" alt=""> <span class="userEarned"
+                                    id="userEarned"> - </span></div>
+                        </div>
+                        <div class="modallinewrap">
+                            待提款:
+                            <div class="modallinewrapvalue"><img src="../images/trx.svg" alt=""> <span
+                                    class="userTotalWithdrawn" id="userTotalWithdrawn"> - </span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modaldesc">
+                <div class="dashmodal"></div>
+                <div class="macblockline">
+                    <div class="modallineflex">
+                        <div class="modallinewrap">
+                            我的节点等级:
+                            <div class="modallinewrapvalue"><span class="userAvailable" id="userlevel"> LV0 </span>
+                            </div>
+                        </div>
+                        <div class="modallinewrap">
+                            <a href="javascript:void(0)" class="maindescbut upgradeButton"
+                                style="text-shadow:0px 0px 0px #333;font-weight: bold;font-size: 16px;">升级</a>
+                        </div>
+                        <div class="modallinenotify">节点最高 <b id="nodelevel" style="color:var(--mainColor)"> - </b> 级，您升级下一级需要支付 <b id="paylevel" style="color:var(--mainColor)"> - </b> TRX</div>
+                    </div>
+                </div>
+                <div class="macblockline">
+                    <div class="modallineflex">
+                        <div class="modallinewrap">
+                            节点总奖励:
+                            <div class="modallinewrapvalue"><img src="../images/trx.svg" alt=""> <span class="userEarned"
+                                    id="nodeEarned"> - </span></div>
+                        </div>
+                        <div class="modallinewrap">
+                            待提款:
+                            <div class="modallinewrapvalue"><img src="../images/trx.svg" alt=""> <span
+                                    class="userTotalWithdrawn" id="nodeTotalWithdrawn"> - </span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modaldesc">
+                <div class="dashmodal"></div>
+                <div class="macblockline">
+                    <div class="modallineflex">
+                        <div class="modallinewrap">
+                            邀请总奖励:
+                            <div class="modallinewrapvalue"><img src="../images/trx.svg" alt=""> <span class="userEarned"
+                                    id="inviteEarned"> - </span></div>
+                        </div>
+                        <div class="modallinewrap">
+                            待提款:
+                            <div class="modallinewrapvalue"><img src="../images/trx.svg" alt=""> <span
+                                    class="userTotalWithdrawn" id="inviteTotalWithdrawn"> - </span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="macblockline">
+                    <div class="modallineflex">
+                        <div class="modallinewrap">
+                            <div id="dref1" style="display: none;">1级: <b><span class="userRefsLevel1" id="ref1"> - </span></b><br /></div>
+                            <div id="dref2" style="display: none;">2级: <b><span class="userRefsLevel2" id="ref2"> - </span></b><br /></div>
+                            <div id="dref3" style="display: none;">3级: <b><span class="userRefsLevel2" id="ref3"> - </span></b><br /></div>
+                        </div>
+                        <div class="modallinewrap">
+                            <div id="dref4" style="display: none;">4级: <b><span class="userRefsLevel2" id="ref4"> - </span></b><br /></div>
+                            <div id="dref5" style="display: none;"> 5级: <b><span class="userRefsLevel2" id="ref5"> - </span></b><br /></div>
+                            <div id="dref6" style="display: none;"><span id="morelevel">6</span>级: <b><span class="userRefsLevel2" id="ref6"> - </span></b><br /></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modaldesc">
+                <form class="maincontform" style="margin-bottom:0;">
+                    <label>您的联署连接:</label>
+                    <input id="reflink" type="text" value="">
+                    <button class="maindescbut buttoncopy" data-clipboard-target="#reflink"
+                        onclick="return false;">复制推荐的链接</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="remodal" data-remodal-id="tron">
+        <a data-remodal-action="close" class="remodal-close"></a>
+        <!--<img src="../images/tron_full.svg" class="modallogo" alt="">-->
+        <div class="modaldesc" style="line-height: 26px;">
+            <b>TRON</b> - 世界上最大的基于区块链的操作系统之一，始终处理每秒2000交易。此外，TRX是最受欢迎的加密货币之一.
+            <h3>收到TRX怎么样?</h3>
+            您可以轻松地在每个流行的交换器上获得TRX，例如 <a href="https://binance.com" class="modallink" terget="_blank">Binance</a>, <a
+                href="https://poloniex.com" class="modallink" terget="_blank">Poloniex</a>, <a
+                href="https://www.bitfinex.com/" class="modallink" terget="_blank">Bitfinex</a>, <a
+                href="https://okex.com/" class="modallink" terget="_blank">OKEx</a>
+            和其他许多人.交易完成后，在您的个人钱包上发送TRX，然后发送到我们的智能合约地址.<br><br>
+            <b class="gt"><i class="fas fa-exclamation-triangle"></i> 重要!</b>
+            我们只使用个人钱包。不要进行存款形式交换账户,你将失去资金,因为支出将来到交易所地址，不是您的!
+            <h3>那个TRX个人钱包使用？</h3>
+            您能使用两种类型的钱包:<br>
+            - <b>浏览器扩展程序</b>. 例如 <b>TronLink</b> / <b>TronPay</b>. 只要在您最喜爱的浏览器上安装扩展并创建个人钱包地址.<br><br>
+            - <b>加密钱包</b>. 您可以使用任何支持TRX加密货币和"TRONd apps"技术的个人加密钱包,例如: <a href="https://tronwallet.me/" class="modallink"
+                terget="_blank">TronWallet</a>, <a href="https://bankowallet.com/" class="modallink"
+                terget="_blank">Banko</a> 和其他.
+        </div>
+    </div>
+    <script src="../js/classie.js"></script>
+    <script src="../js/cbpAnimatedHeader.min.js"></script>
+    <script src="../js/parallax.js"></script>
+    <script src="../js/remodal.min.js"></script>
+    <script src="../js/ScrollTrigger.min.js"></script>
+    <script>
+        window.counter = function () {
+            var span = this.querySelector('span');
+            var current = parseInt(span.textContent);
+            span.textContent = current + 1;
+        };
+        document.addEventListener('DOMContentLoaded', function () {
+            var trigger = new ScrollTrigger({ addHeight: true });
+        });
+    </script>
+    <script>
+        function animateNumbers() {
+            var num = $(".totalsumnum1");
+            num.each(function (indx, el) {
+                var max = $(el).data("max");
+                var duration = 1500;
+                var visibility = checkViewport(el);
+                $(el).on("animeNum", function () { $({ n: 0 }).animate({ n: max }, { easing: "linear", duration: duration, step: function (now, fx) { $(el).html(now | 0) } }) }).data("visibility", visibility);
+                visibility && $(el).trigger("animeNum")
+            });
+            function checkViewport(el) {
+                var H = document.documentElement.clientHeight,
+                    h = el.scrollHeight,
+                    pos = el.getBoundingClientRect();
+                return pos.top + h > 0 && pos.bottom - h < H
+            }
+            $(window).scroll(function () {
+                num.each(function (indx, el) {
+                    var visibility = checkViewport(el);
+                    el = $(el);
+                    var old = el.data("visibility");
+                    old != visibility && el.data("visibility", visibility) && !old && el.trigger("animeNum")
+                })
+            })
+        }
+        $(function () {
+            animateNumbers();
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("a.scrollto").click(function () {
+                var elementClick = $(this).attr("href")
+                var destination = $(elementClick).offset().top;
+                jQuery("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination }, 800);
+                return false;
+            });
+        });
+    </script>
+    <script src="../js/easing.js" type="text/javascript"></script>
+    <script src="../js/jquery.ui.totop.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+        });
+    </script>
+    <script src="../js/clipboard.min.js"></script>
+    <script src="../js/base.js"></script>
+    <script src="../js/jquery-spec.min.js" type="text/javascript"></script>
+</body>
+
+</html>
